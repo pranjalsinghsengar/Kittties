@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import "./App.css";
+import AppCtxt, { Context } from "./context/AppContext";
+import Main from "./pages/Main";
+import Splash from "./pages/screens/Splash";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+  const [show, setShow] = useState(false);
+  setInterval(() => {
+    setShow(true);
+  }, 1500);
+  return <AppCtxt>{show ? <Main /> : <Splash />}</AppCtxt>;
 }
 
 export default App;
