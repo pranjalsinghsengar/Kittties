@@ -3,6 +3,7 @@ import "./App.css";
 import AppCtxt, { Context } from "./context/AppContext";
 import Main from "./pages/Main";
 import Splash from "./pages/screens/Splash";
+import ReactRoute from "./routes/ReactRoute";
 
 function App() {
   const [show, setShow] = useState(false);
