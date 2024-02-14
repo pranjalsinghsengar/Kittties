@@ -5,7 +5,7 @@ const ScrapImg = ({ imgURL }) => {
     <img
       src={imgURL}
       alt='asdas'
-      className=' h-4/5 mr-2 rounded-2xl shadow-xl border border-black '
+      className=' w-1/5 mr-2 rounded-2xl shadow-xl border border-black '
     />
   );
 };

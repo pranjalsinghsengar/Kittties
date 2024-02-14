@@ -4,6 +4,7 @@ import Main from "../pages/Main";
 import Cart from "../pages/Cart";
 import RuskRupees from "../pages/RuskRupees";
 import Home from "../Home";
+import ReactjsProject from "../pages/ReactjsProject";
 
 const ReactRoute = () => {
   return (
@@ -12,6 +13,7 @@ const ReactRoute = () => {
         {/* <Route path='/' element={<Home />} /> */}
         {/* <Route path='cart' element={<Cart />} /> */}
         <Route path='/' element={<Home />} />
+        <Route path='ReactjsProject' element={<ReactjsProject />} />
       </Routes>
     </>
   );

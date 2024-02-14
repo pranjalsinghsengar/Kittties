@@ -6,11 +6,12 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <div className=' flex justify-center z-10 mb-20'>
-      <div className='w-full flex justify-between items-center h-20 sm:h-14 fixed bg-gradient-to-b from-white via-slate-50 via-50% to-transparent z-10'>
-        <div className='sm:w-32 flex justify-center sm:mt-5 sm:ml-10 w-full '>
+    <div className=' flex justify-center z-10 '>
+      <div className='w-full pr-5 pl-5  flex justify-between items-center h-20 sm:h-14 fixed bg-gradient-to-b from-white via-slate-50 via-50% to-transparent z-10'>
+        <div className='sm:w-32  sm:mt-5 sm:ml-10 w-full '>
           <img src='/logo123.png' className='w-20 sm:w-28' />
         </div>
+
         {/* <h1 className='text-xl font-bold '>
           PERSONAL
           <p className='text-right text-slate-700 pl-20 text-sm'>
@@ -18,17 +19,20 @@ const Header = () => {
             learning{" "}
           </p>{" "}
         </h1> */}
-        {/* <button
+
+        <button
           onClick={() => {
-            location.pathname === "/" ? navigate("cart") : navigate("/");
+            location.pathname === "/"
+              ? navigate("ReactjsProject")
+              : navigate("/");
           }}
-          className='w-20  relative justify-center grid'
+          className='relative justify-center grid border p-2 pr-4 pl-5 rounded-md text-sm'
         >
-          <div className='absolute top-5 -z-10 w-full'>
+          <div className='absolute top-5 -z-10 w-full '>
             <img src='https://media.tenor.com/xH-AneonkgsAAAAi/kitten-cat.gif' />
           </div>
-          {location.pathname === "/" ? "Watch" : "Dashboard"}
-        </button> */}
+          {location.pathname === "/" ? "ReactJS project" : "React Native"}
+        </button>
       </div>
     </div>
   );

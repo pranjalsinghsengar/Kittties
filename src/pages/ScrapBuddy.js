@@ -3,18 +3,18 @@ import ScrapImg from "../components/ScrapImg";
 
 const ScrapBuddy = () => {
   return (
-    <div className='h-full flex justify-center items-center flex-row-reverse snap-center '>
-      <div className='w-1/5 flex justify-center items-center'>
+    <div className='h-full flex justify-center items-center  flex-col-reverse lg:flex-row-reverse snap-center '>
+      <div className='lg:w-1/5 flex justify-center items-center'>
         <div className='border-green-900  border shadow-xl p-4 pr-10 pl-10 rounded-lg text-green-800'>
           Download Apk
         </div>
       </div>
-      <div className='relative flex h-full justify-center items-center   '>
+      <div className='relative flex lg:h-full justify-center items-center w-full overflow-hidden   '>
         <ScrapImg imgURL='Images/sb11.png' />
         <ScrapImg imgURL='Images/sb2.jpg' />
         <ScrapImg imgURL='Images/sb5.jpg' />
         <ScrapImg imgURL='Images/sb1.jpg' />
-        <div className='w-full flex justify-center items-center h-full  absolute  sm:overflow-hidden bg-gradient-to-l from-white to-transparent'></div>
+        <div className='w-full flex justify-center items-center h-full  absolute  sm:overflow-hidden  bg-gradient-to-t lg:bg-gradient-to-l from-white to-transparent'></div>
       </div>
     </div>
   );

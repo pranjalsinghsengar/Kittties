@@ -14,7 +14,8 @@ const Main = () => {
   console.log(userData);
   const dispatch = useDispatch();
   return (
-    <div className='w-full h-full relative'>
+    <div className='w-full h-full relative no-scrollbar overflow-hidden'>
+      
       <Header />
       <ReactRoute />
     </div>

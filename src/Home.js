@@ -4,7 +4,7 @@ import ScrapBuddy from "./pages/ScrapBuddy";
 
 const Home = () => {
   return (
-    <div className='h-screen overflow-auto snap-y snap-mandatory   '>
+    <div className='h-screen overflow-auto snap-y snap-mandatory no-scrollbar '>
       <ScrapBuddy />
       <RuskRupees />
     </div>
