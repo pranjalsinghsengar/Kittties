@@ -6,7 +6,7 @@ const Header = () => {
   const location = useLocation();
 
   return (
-    <div className=' flex justify-center z-10 '>
+    <div className=' flex justify-center z-10 mb-20'>
       <div className='w-full flex justify-between items-center h-20 sm:h-14 fixed bg-gradient-to-b from-white via-slate-50 via-50% to-transparent z-10'>
         <div className='sm:w-32 flex justify-center sm:mt-5 sm:ml-10 w-full '>
           <img src='/logo123.png' className='w-20 sm:w-28' />
