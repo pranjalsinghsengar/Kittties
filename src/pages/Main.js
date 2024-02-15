@@ -8,6 +8,7 @@ import { useNavigate } from "react-router-dom";
 import Header from "../components/Header";
 import ReactRoute from "../routes/ReactRoute";
 import Home from "./Home";
+import PopUp from "../components/PopUp";
 
 const Main = () => {
   const { userData } = useContext(Context);
@@ -15,9 +16,9 @@ const Main = () => {
   const dispatch = useDispatch();
   return (
     <div className='w-full h-full relative no-scrollbar overflow-hidden'>
-      
       <Header />
       <ReactRoute />
+      <PopUp />
     </div>
   );
 };

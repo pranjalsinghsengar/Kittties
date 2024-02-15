@@ -5,6 +5,7 @@ export const Context = createContext();
 
 const AppCtxt = ({ children }) => {
   const [userData, setUserData] = useState([]);
+  const [headerAlign, setheaderAlign] = useState(null);
 
   const Xdata = async () => {
     await fetch("https://dummyjson.com/users")
@@ -15,7 +16,13 @@ const AppCtxt = ({ children }) => {
     Xdata();
   }, []);
 
-  return <Context.Provider value={{ userData }}>{children}</Context.Provider>;
+  return (
+    <Context.Provider
+      value={{ userData, setUserData, headerAlign, setheaderAlign }}
+    >
+      {children}
+    </Context.Provider>
+  );
 };
 
 export default AppCtxt;

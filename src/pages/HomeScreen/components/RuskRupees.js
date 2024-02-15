@@ -1,5 +1,5 @@
 import React from "react";
-import FooterGradient from "../components/FooterGradient";
+import FooterGradient from "../../../components/FooterGradient";
 
 const RuskRupees = () => {
   const handleDownload = () => {

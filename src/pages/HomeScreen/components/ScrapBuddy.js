@@ -1,5 +1,5 @@
 import React from "react";
-import ScrapImg from "../components/ScrapImg";
+import ScrapImg from "../../../components/ScrapImg";
 
 const ScrapBuddy = () => {
   return (
