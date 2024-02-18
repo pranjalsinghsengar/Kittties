@@ -1,5 +1,5 @@
-import React, { createContext, useEffect, useState } from "react";
-
+import React, { createContext, useEffect, useRef, useState } from "react";
+import { gsap, ScrollTrigger } from "gsap/all";
 // const context ;
 export const Context = createContext();
 
@@ -16,9 +16,17 @@ const AppCtxt = ({ children }) => {
     Xdata();
   }, []);
 
+
+
   return (
     <Context.Provider
-      value={{ userData, setUserData, headerAlign, setheaderAlign }}
+      value={{
+        userData,
+        setUserData,
+        headerAlign,
+        setheaderAlign,
+  
+      }}
     >
       {children}
     </Context.Provider>

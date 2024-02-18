@@ -11,11 +11,12 @@ import Home from "./Home";
 import PopUp from "../components/PopUp";
 
 const Main = () => {
-  const { userData } = useContext(Context);
+  const { userData, elementRef } = useContext(Context);
+
   console.log(userData);
   const dispatch = useDispatch();
   return (
-    <div className='w-full h-full relative no-scrollbar overflow-hidden'>
+    <div className='w-full h-full relative no-scrollbar' ref={elementRef}>
       <Header />
       <ReactRoute />
       <PopUp />
