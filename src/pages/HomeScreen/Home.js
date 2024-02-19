@@ -18,11 +18,10 @@ const Home = () => {
   const eleRef = useRef(null);
 
   gsap.registerPlugin(ScrollTrigger);
-  gsap.registerPlugin(CSSPlugin);
 
   useEffect(() => {
-    const SplitHead = new SplitType(".textHead");
-    console.warn("SplitHead", SplitHead);
+    // const SplitHead = new SplitType(".textHead");
+    // console.warn("SplitHead", SplitHead);
 
     const tl = gsap
       .timeline(
@@ -40,6 +39,7 @@ const Home = () => {
       )
       .to(".construction", {
         backgroundColor: "#000000",
+        delay: 0.7,
       });
 
     // tl.from(".textHead", {
@@ -49,13 +49,15 @@ const Home = () => {
     //   stagger: 0.2, // Stagger time between each element
     // });
 
-    tl.to(".char, .textPera ", {
+    tl.to(".textHead, .textPera ", {
       y: -30,
       stagger: 0.09,
       delay: 0.7,
       duration: 0.7,
       opacity: 1,
     });
+
+    // return () => {};
   }, []);
 
   return (

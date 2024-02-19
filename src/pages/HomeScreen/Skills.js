@@ -9,7 +9,7 @@ const Skills = ({ triggerRef, eleRef }) => {
       className='h-full  flex justify-center items-center construction  '
     >
       <div className='text-white w-4/5 '>
-        <h1 className='text-5xl lg:text-9xl italic  textHead '>
+        <h1 className='text-5xl lg:text-9xl italic textHead opacity-0 '>
           This site is on Construction
         </h1>
         <p className='lg:text-4xl text-right textPera  opacity-0'>
